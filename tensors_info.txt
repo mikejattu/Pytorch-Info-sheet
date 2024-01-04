@@ -1,0 +1,70 @@
+A tensor is a fundamental data structure used for numerical computations, similar to arrays or matrices in other programming languages.
+Tensors are multi-dimensional arrays that can store data and perform mathematical operations efficiently on GPUs, making them a crucial component for deep learning frameworks like PyTorch.
+
+The following are some functions that can be used on tensors:
+
+torch.tensor(): Creates a tensor from a Python list, NumPy array, or another tensor.
+Syntax: torch.tensor(data, dtype=None, device=None, requires_grad=False)
+
+torch.zeros(): Generates a tensor filled with zeros.
+Syntax: torch.zeros(size, dtype=None, device=None, requires_grad=False)
+
+torch.ones(): Generates a tensor filled with ones.
+Syntax: torch.ones(size, dtype=None, device=None, requires_grad=False)
+
+torch.eye(): Creates an identity matrix.
+Syntax: torch.eye(n, m=None, dtype=None, device=None, requires_grad=False)
+
+torch.rand(): Generates a tensor with random values from a uniform distribution.
+Syntax: torch.rand(size, dtype=None, device=None, requires_grad=False)
+
+torch.randn(): Generates a tensor with random values from a normal distribution.
+Syntax: torch.randn(size, dtype=None, device=None, requires_grad=False)
+
+torch.arange(): Creates a tensor with values in a specified range.
+Syntax: torch.arange(start=0, end, step=1, dtype=None, device=None, requires_grad=False)
+
+torch.linspace(): Generates a tensor with evenly spaced values.
+Syntax: torch.linspace(start, end, steps, dtype=None, device=None, requires_grad=False)
+
+torch.cat(): Concatenates tensors along a specified dimension.
+Syntax: torch.cat(tensors, dim=0)
+
+torch.stack(): Stacks tensors along a new dimension.
+Syntax: torch.stack(tensors, dim=0)
+
+torch.add(): Element-wise addition of two tensors.
+Syntax: torch.add(input, other, alpha=1)
+
+torch.sub(): Element-wise subtraction of two tensors.
+Syntax: torch.sub(input, other, alpha=1)
+
+torch.mul(): Element-wise multiplication of two tensors.
+Syntax: torch.mul(input, other)
+
+torch.div(): Element-wise division of two tensors.
+Syntax: torch.div(input, other)
+
+torch.mm() / torch.matmul() / @: Performs matrix multiplication between tensors.
+Syntax: torch.mm(input, other) or torch.matmul(input, other) or input @ other
+
+torch.transpose(): Transposes dimensions of a tensor.
+Syntax: torch.transpose(input, dim0, dim1)
+
+torch.reshape() / torch.view(): Reshapes the tensor to a specified shape.
+Syntax: torch.reshape(input, shape) or torch.view(input, shape)
+
+torch.argmax() / torch.argmin(): Returns indices of the maximum/minimum values.
+Syntax: torch.argmax(input, dim=None) or torch.argmin(input, dim=None)
+
+tensor.item(): Retrieves a single value from a tensor containing a single element.
+Syntax: tensor.item()
+
+tensor.to(): Moves a tensor to a specified device.
+Syntax: tensor.to(device)
+
+torch.grad(): Computes gradients of tensors with respect to some scalar value.
+Syntax: torch.autograd.grad(outputs, inputs, grad_outputs=None, retain_graph=None, create_graph=False)
+
+tensor.detach(): Returns a new tensor detached from the current graph.
+Syntax: tensor.detach()
