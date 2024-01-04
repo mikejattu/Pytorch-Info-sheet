@@ -14,4 +14,20 @@ Parallelization: Training deep learning models on hardware like GPUs benefits fr
 
 The choice of batch size is a hyperparameter and can significantly impact the training process and the resulting model. Smaller batch sizes might converge faster but can be computationally inefficient, while larger batch sizes can lead to more stable gradients but might require more memory and computational resources. Practitioners often experiment with different batch sizes to find a balance between computational efficiency and model performance for a specific task or dataset.
 
-2. 
+2. What is an activation function in a Neural Network ?
+
+Answer:
+
+An activation function in a neural network is a mathematical operation applied to the output of each neuron in a neural network layer. It introduces non-linearity into the network, enabling it to learn complex patterns in data. The activation function determines whether a neuron should be activated or not based on the weighted sum of its inputs plus a bias.
+
+Common activation functions include:
+
+Sigmoid: It squashes the input values between 0 and 1. However, it has vanishing gradient problems that can slow down learning, especially in deep networks.
+
+ReLU (Rectified Linear Unit): This function outputs the input directly if it's positive, and zero otherwise. It's simpler and computationally efficient, helping alleviate the vanishing gradient problem.
+
+Tanh: Similar to the sigmoid, but squashes input values between -1 and 1, centered around zero.
+
+Softmax: Usually used in the output layer for multi-class classification problems, as it normalizes the outputs into a probability distribution.
+
+The choice of activation function depends on the nature of the problem being solved, the properties of the data, and the architecture of the neural network. Different activation functions have different characteristics and affect the performance and training of the neural network differently.
