@@ -1,0 +1,17 @@
+1. why do we have a batch size when training data ?
+Answer:
+In machine learning, the batch size refers to the number of training samples utilized in one iteration (forward and backward pass) of the learning algorithm. During the training of a neural network or any machine learning model using gradient descent-based optimization algorithms (like stochastic gradient descent, mini-batch gradient descent), the data is divided into batches, and these batches are processed iteratively to update the model's parameters.
+
+There are a few reasons why batch sizes are used in training data:
+
+Computational Efficiency: Utilizing batches allows for more efficient computation, especially when working with large datasets. Processing the entire dataset at once might not fit into memory, so dividing it into smaller batches helps in managing memory consumption.
+
+Gradient Estimation: Batch sizes influence how noisy or accurate the estimation of the gradient is. Larger batch sizes tend to provide a more accurate estimation of the gradient of the loss function because they average gradients over more samples. However, smaller batch sizes introduce more randomness and noise into the gradient estimation, which can sometimes help the model avoid local minima and make the optimization process more stochastic.
+
+Regularization Effects: The choice of batch size can have implicit regularization effects. Smaller batch sizes introduce more noise in the parameter updates, which can act as a form of regularization and help prevent overfitting.
+
+Parallelization: Training deep learning models on hardware like GPUs benefits from parallel processing. Splitting the data into batches allows for parallel computations across different batches, accelerating the training process.
+
+The choice of batch size is a hyperparameter and can significantly impact the training process and the resulting model. Smaller batch sizes might converge faster but can be computationally inefficient, while larger batch sizes can lead to more stable gradients but might require more memory and computational resources. Practitioners often experiment with different batch sizes to find a balance between computational efficiency and model performance for a specific task or dataset.
+
+2. 
