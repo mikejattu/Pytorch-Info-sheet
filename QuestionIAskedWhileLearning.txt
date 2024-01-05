@@ -31,3 +31,5 @@ Tanh: Similar to the sigmoid, but squashes input values between -1 and 1, center
 Softmax: Usually used in the output layer for multi-class classification problems, as it normalizes the outputs into a probability distribution.
 
 The choice of activation function depends on the nature of the problem being solved, the properties of the data, and the architecture of the neural network. Different activation functions have different characteristics and affect the performance and training of the neural network differently.
+
+3.
